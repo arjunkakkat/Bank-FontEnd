@@ -43,11 +43,35 @@ export class LoginComponent implements OnInit {
     console.log(this.pswd)
   }
 
-  // login
-  login() {
-    // alert('Login Clicked')
-    var acno = this.acno
-    var pswd = this.pswd
+  // // login
+  // login() {
+  //   // alert('Login Clicked')
+  //   var acno = this.acno
+  //   var pswd = this.pswd
+
+  //   let userDetails = this.userDetails
+
+  //   if(acno in userDetails){
+  //     if (pswd == userDetails[acno]['password']){
+  //       alert('Login Successful')
+  //     }
+  //     else{
+  //       alert('Incorrect Password')
+  //     }
+  //     }
+  //     else{
+  //       alert('User doesnot Exist!!')
+  //     }
+  //   }
+  // }
+
+
+
+  // login with 2 arg -template referance
+  login(a:any,p:any) {
+    // console .log(a.value);
+    var acno = a.value
+    var pswd = p.value
 
     let userDetails = this.userDetails
 
